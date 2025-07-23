@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folheto Digital: Pragas Urbanas</title>
+    <!-- Carrega o Tailwind CSS para estilização fácil e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a fonte Inter para todo o corpo do documento */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos para o botão "Voltar ao Topo" */
+        #backToTopBtn {
+            display: none; /* Escondido por padrão */
+            position: fixed; /* Fixo na tela */
+            bottom: 20px; /* 20px do fundo */
+            right: 20px; /* 20px da direita */
+            z-index: 99; /* Garante que fique acima de outros elementos */
+            border: none; /* Remove a borda */
+            outline: none; /* Remove o contorno */
+            background-color: #3B82F6; /* Cor de fundo azul do Tailwind */
+            color: white; /* Texto branco */
+            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+            padding: 15px; /* Preenchimento */
+            border-radius: 50%; /* Borda arredondada para ser um círculo */
+            font-size: 18px; /* Tamanho da fonte */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+        }
+        #backToTopBtn:hover {
+            background-color: #2563EB; /* Cor de fundo mais escura ao passar o mouse */
+            transform: scale(1.1); /* Aumenta ligeiramente ao passar o mouse */
+        }
+        /* Estilos para os detalhes do guia prático */
+        .guide-detail {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .guide-detail::before {
+            content: "•";
+            color: #3B82F6; /* Cor do bullet point */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1.5em;
+            position: absolute;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Cabeçalho da Aplicação -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 shadow-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-4xl font-extrabold mb-4 md:mb-0">Folheto Digital: Pragas Urbanas</h1>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-lg">
+                    <li><a href="#introducao" class="hover:text-blue-200 transition duration-300">Introdução</a></li>
+                    <li><a href="#pragas-urbanas" class="hover:text-blue-200 transition duration-300">Pragas Urbanas</a></li>
+                    <li><a href="#cupins" class="hover:text-blue-200 transition duration-300">Cupins</a></li>
+                    <li><a href="#graos-armazenados" class="hover:text-blue-200 transition duration-300">Grãos Armazenados</a></li>
+                    <li><a href="#outras-pragas" class="hover:text-blue-200 transition duration-300">Outras Pragas</a></li>
+                    <li><a href="#prevencao" class="hover:text-blue-200 transition duration-300">Prevenção</a></li>
+                    <li><a href="#controle" class="hover:text-blue-200 transition duration-300">Controle</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de Introdução -->
+    <section id="introducao" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-300 pb-2">Bem-vindo ao Folheto Digital de Pragas Urbanas</h2>
+        <p class="text-lg leading-relaxed mb-4">
+            Este folheto foi desenvolvido para auxiliar técnicos no reconhecimento, prevenção e controle das principais pragas urbanas. A informação aqui contida visa ser um guia prático para o dia a dia, promovendo ambientes mais seguros e saudáveis.
+        </p>
+        <p class="text-lg leading-relaxed">
+            Compreender o comportamento e os hábitos das pragas é o primeiro passo para um controle eficaz e sustentável. Explore as seções abaixo para aprofundar seus conhecimentos.
+        </p>
+    </section>
+
+    <!-- Seção Principal: Pragas Urbanas -->
+    <section id="pragas-urbanas" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-300 pb-2">Pragas Urbanas Comuns</h2>
+
+        <!-- Sub-seção sobre Roedores -->
+        <div id="roedores" class="mb-10">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4">Roedores</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                Ratos e camundongos são pragas urbanas que causam danos materiais, contaminam alimentos e transmitem doenças graves.
+            </p>
+
+            <!-- Detalhes para Rattus norvegicus (Ratazana) -->
+            <div id="ratazana" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Rattus norvegicus (Ratazana)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Ratazana" alt="Imagem de Ratazana" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Roedor grande, cauda grossa e menor que o corpo, orelhas pequenas, focinho grosso.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Gestação de 21-23 dias, ninhadas de 6-12 filhotes. Maturidade sexual em 2-3 meses.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem cerca de 1 ano em ambientes urbanos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Preferem a escuridão, noturnas.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Roem madeira, plástico, sacos, concreto macio.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Esgotos, galerias pluviais, subsolos, terrenos baldios, lixões, armazéns, aterros sanitários.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Mus musculus (Camundongo) -->
+            <div id="camundongo" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Mus musculus (Camundongo)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Camundongo" alt="Imagem de Camundongo" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Roedor pequeno, cauda longa e fina (maior que o corpo), orelhas grandes, focinho pontudo.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Gestação de 19-21 dias, ninhadas de 5-10 filhotes. Maturidade sexual em 1,5 meses.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem cerca de 1 ano.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Preferem a escuridão, noturnos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Roem embalagens, papelão, plástico.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Cereais, sementes, alimentos humanos, doces. Ambientes internos de residências, comércios, indústrias, forros, despensas, armários, frestas em paredes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Rattus rattus (Rato de Telhado) -->
+            <div id="rato-telhado" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Rattus rattus (Rato de Telhado)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Rato+de+Telhado" alt="Imagem de Rato de Telhado" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Roedor médio, cauda longa (maior que o corpo), orelhas grandes, focinho afilado. Ágil e bom escalador.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Gestação de 21-23 dias, ninhadas de 5-10 filhotes. Maturidade sexual em 2-3 meses.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem cerca de 1 ano.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Preferem a escuridão, noturnos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Roem embalagens, fios elétricos, madeira.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Frutas, grãos, vegetais, alimentos de origem animal. Telhados, forros, árvores, depósitos altos, sótãos, fiação elétrica, armazéns, portos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-seção sobre Baratas -->
+        <div id="baratas" class="mb-10 mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4">Baratas</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                As baratas são insetos noturnos, de hábitos gregários e onívoros, que se proliferam rapidamente.
+            </p>
+
+            <!-- Detalhes para Periplaneta americana (Barata Americana) -->
+            <div id="barata-americana" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Periplaneta americana (Barata Americana)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Barata+Americana" alt="Imagem de Barata Americana" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Grande barata, marrom-avermelhada, com duas manchas claras no pronoto.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo (em ooteca) → Ninfa → Adulto. Ciclo de 150 a 300 dias.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 1 a 2 anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Forte atração pela luz (fototropismo positivo), mas preferem a escuridão quando se escondem.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Baixa. Entram por aberturas ou embalagens danificadas.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Material orgânico em decomposição, lixo, restos de alimentos, amido, gordura. Esgotos, galerias pluviais, porões, tubulações, cozinhas, restaurantes, áreas úmidas e quentes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Blatella germanica (Barata Alemã) -->
+            <div id="barata-alema" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Blattella germanica (Barata Alemã)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Barata+Alema" alt="Imagem de Barata Alemã" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Pequena barata, marrom-clara, com duas listras escuras no pronoto.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo (em ooteca) → Ninfa → Adulto. Ciclo rápido, de 50 a 60 dias.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 4 a 6 meses.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Raramente voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Preferem a escuridão.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Moderada. Entram em pequenas frestas e embalagens.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Restos de alimentos, gorduras, amidos, cola de livros. Cozinhas, banheiros, despensas, equipamentos eletrônicos (torradeiras, fornos), frestas em paredes, atrás de quadros.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Supella (Barata de Faixa Marrom) -->
+            <div id="barata-faixa-marrom" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Supella longipalpa (Barata de Faixas Marrons)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Barata+de+Faixas+Marrons" alt="Imagem de Barata de Faixas Marrons" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Pequena barata, marrom-escura, com duas faixas claras nas asas.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo (em ooteca) → Ninfa → Adulto. Ciclo de 90 a 270 dias.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 3 a 10 meses.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Machos voam, fêmeas saltam.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Preferem a escuridão.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Moderada.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Alimentos, amido, tecidos, cola. Salas, quartos, escritórios, tetos falsos, móveis, aparelhos eletrônicos, áreas mais secas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-seção sobre Formigas -->
+        <div id="formigas" class="mb-10 mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4">Formigas</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                As formigas são insetos sociais que vivem em colônias organizadas, algumas podendo ser vetores de patógenos.
+            </p>
+
+            <!-- Detalhes para Tapinoma -->
+            <div id="tapinoma" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Tapinoma melanocephalum (Formiga Fantasma)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Formiga+Fantasma" alt="Imagem de Formiga Fantasma" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Formiga muito pequena, com cabeça e tórax escuros e abdômen e pernas translúcidos/claros.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Pupa → Adulto. Ciclo de algumas semanas a meses.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Rainhas vivem anos; operárias vivem meses.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Reprodutores alados voam para fundar novas colônias.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraída pela luz, especialmente à noite.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Entra em pequenas frestas e embalagens de alimentos.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Doces, açúcares, óleos, gorduras, alimentos para animais de estimação. Cozinhas, banheiros, frestas em paredes, conduítes, áreas úmidas, vasos de plantas, em busca de água e alimento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Monomorium -->
+            <div id="monomorium" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Monomorium pharaonis (Formiga Faraó)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Formiga+Farao" alt="Imagem de Formiga Faraó" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Formiga muito pequena, amarelada ou marrom-clara. Formam colônias grandes e com muitas rainhas.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Pupa → Adulto. Ciclo de 30 a 45 dias.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Rainhas vivem anos; operárias vivem algumas semanas a meses.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Reprodutores alados podem voar, mas a dispersão é mais por "brotação" (formação de novas colônias).</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Pouca atração pela luz.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Entra em embalagens lacradas e pequenas frestas.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Alimentos doces, gordurosos, carnes, sangue, pus (em hospitais). Hospitais, restaurantes, residências, frestas em paredes, dentro de aparelhos eletrônicos, em busca de alimento e umidade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Solenopsis (Formiga Lava-pés) -->
+            <div id="solenopsis" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Solenopsis invicta (Formiga Lava-Pés, Formiga de Fogo)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Formiga+Lava-Pes" alt="Imagem de Formiga Lava-Pés" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Formiga agressiva, avermelhada, com ferrão que causa dor intensa. Constroem grandes ninhos em formato de monte no solo.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Pupa → Adulto. Ciclo de 20 a 30 dias.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Rainhas vivem anos; operárias vivem meses.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Reprodutores alados voam para fundar novas colônias.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Reprodutores alados são atraídos pela luz.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Entra em embalagens se houver frestas, mas o principal problema é a picada.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Quase onívoras, comem sementes, insetos, pequenos animais, alimentos, resíduos. Jardins, campos, gramados, calçadas, áreas externas de residências, parques, podendo invadir residências em busca de alimento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Atta (Saúva) -->
+            <div id="atta" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Atta spp. (Saúva, Cortadeira)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Saúva" alt="Imagem de Saúva" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Formigas grandes, com mandíbulas poderosas, cortam folhas para cultivar fungo. Soldados com cabeças enormes.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Pupa → Adulto. Ciclo contínuo.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Rainhas vivem até 20 anos; operárias vivem alguns meses.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Reprodutores alados (tanajuras) voam durante a revoada.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Reprodutores alados são atraídos pela luz.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetram embalagens para alimento, mas danificam plantas e podem danificar estruturas de madeira.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Folhas, flores, brotos de plantas (para cultivar fungo). Jardins, campos, áreas agrícolas, áreas com vegetação, podendo construir ninhos subterrâneos extensos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Paratrechina (Formiga Louca) -->
+            <div id="paratrechina" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Paratrechina longicornis (Formiga Louca)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Formiga+Louca" alt="Imagem de Formiga Louca" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Formiga de pernas longas e rápidas, marrom-escura a preta. Movimento errático e desordenado.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Pupa → Adulto. Ciclo de algumas semanas.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Rainhas vivem anos; operárias vivem meses.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Reprodutores alados voam.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraída pela luz, especialmente à noite.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Entra em pequenas frestas e embalagens de alimentos.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Onívoras, comem doces, óleos, insetos mortos, néctar. Ambientes urbanos e rurais, residências, hospitais, fábricas, pátios, áreas externas e internas, em busca de alimento e umidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-seção sobre Moscas -->
+        <div id="moscas" class="mb-10 mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4">Moscas</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                As moscas são vetores de diversas doenças e se reproduzem em matéria orgânica em decomposição.
+            </p>
+
+            <!-- Detalhes para Mosca Doméstica -->
+            <div id="mosca-domestica" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Musca domestica (Mosca Doméstica)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Mosca+Domestica" alt="Imagem de Mosca Doméstica" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Inseto voador, cinza-escuro, com quatro listras escuras no tórax.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (maggot) → Pupa → Adulto. Ciclo rápido, de 7 a 10 dias em condições ideais.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 15 a 30 dias.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa muito bem.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraída pela luz e áreas iluminadas.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetra, mas contamina superfícies.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Matéria orgânica em decomposição (lixo, fezes, alimentos em putrefação). Residenciais, áreas rurais, lixões, mercados, abatedouros, qualquer local com alimento ou matéria orgânica exposta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Drosophila (Mosca das Frutas) -->
+            <div id="drosophila" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Drosophila melanogaster (Mosca-das-Frutas)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Mosca+das+Frutas" alt="Imagem de Mosca das Frutas" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Pequena mosca amarelada ou marrom-clara, com olhos vermelhos.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Pupa → Adulto. Ciclo muito rápido, de 8 a 10 dias.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 2 a 9 semanas.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraída pela luz.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetra, mas contamina alimentos.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Frutas e vegetais maduros/em decomposição, sucos, vinagre, bebidas alcoólicas. Cozinhas, bares, restaurantes, áreas de processamento de alimentos, fruteiras.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Calliphora (Mosca Varejeira) -->
+            <div id="calliphora" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Calliphora spp. (Mosca-Varejeira)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Mosca+Varejeira" alt="Imagem de Mosca Varejeira" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Mosca grande, azul-metálico ou verde-metálico, com corpo robusto.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (maggot) → Pupa → Adulto. Ciclo de 10 a 25 dias.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 15 a 30 dias.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa bem.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraída pela luz.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetra, mas contamina.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Cadáveres, carne em decomposição, lixo orgânico, feridas de animais. Áreas com presença de matéria orgânica em decomposição, lixões, abatedouros, residências (atraídas por odores).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Psychoda (Mosca de Esgoto/Filtro) -->
+            <div id="psychoda" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Psychoda alternata (Mosquinha de Banheiro, Mosquinha-dos-Ralos)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Mosquinha+de+Banheiro" alt="Imagem de Mosquinha de Banheiro" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Pequena mosca peluda, cinza-escura, com asas em forma de "coração" quando em repouso.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (aquática) → Pupa → Adulto. Ciclo de 8 a 24 dias.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 1 a 2 semanas.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa, mas em curtas distâncias.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraída pela luz.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetra.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Lodo orgânico em ralos, encanamentos, fossas sépticas, vasos sanitários. Banheiros, cozinhas, lavanderias, áreas úmidas com acúmulo de matéria orgânica.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-seção sobre Mosquitos -->
+        <div id="mosquitos" class="mb-10 mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4">Mosquitos</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                Mosquitos são vetores de doenças graves e sua proliferação está ligada à água parada.
+            </p>
+
+            <!-- Detalhes para Pernilongos (Gêneros Culex, Aedes, Anopheles) -->
+            <div id="pernilongos" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Pernilongos (Culex spp., Aedes spp., Anopheles spp.)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Pernilongo" alt="Imagem de Pernilongo" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Insetos voadores, corpo esguio, pernas longas. Fêmeas se alimentam de sangue.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo (na água) → Larva (aquática) → Pupa (aquática) → Adulto. Ciclo de 7 a 15 dias.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 1 a 4 semanas.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voam bem.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraídos pela luz e dióxido de carbono.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetram embalagens, mas picam pessoas.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Água parada para oviposição e desenvolvimento larval. Adultos buscam sangue. Próximo a focos de água parada (vasos de plantas, pneus, calhas, caixas d'água), ambientes internos e externos, especialmente ao entardecer e noite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova Seção: Cupins -->
+    <section id="cupins" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-300 pb-2">Cupins: O Inimigo Silencioso da Madeira</h2>
+        <p class="text-lg leading-relaxed mb-4">
+            Cupins são insetos sociais que se alimentam de celulose, causando grandes danos a estruturas de madeira.
+        </p>
+
+        <!-- Detalhes para Coptotermes -->
+        <div id="coptotermes" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Coptotermes spp. (Cupim Subterrâneo)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Cupim+Subterraneo" alt="Imagem de Cupim Subterrâneo" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Sociais. Colônias subterrâneas. Operários (brancos, macios), soldados (cabeça grande, mandíbulas fortes), reprodutores (alados ou sem asas).</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfa → Operário/Soldado/Reprodutor. Ciclo contínuo na colônia.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Operários e soldados vivem alguns anos; rainhas vivem décadas.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Reprodutores alados (siriris) voam durante a revoada.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Reprodutores alados são fortemente atraídos pela luz durante a revoada.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Perfuram madeira, papelão, plásticos, gesso, concreto (para acesso).</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Celulose (madeira, papel, tecido), isopor, livros, documentos, conduítes. Estruturas de madeira (telhados, pisos, batentes), paredes, móveis, jardins, subsolos, solos úmidos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Cryptotermes -->
+        <div id="cryptotermes" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Cryptotermes spp. (Cupim de Madeira Seca)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Cupim+de+Madeira+Seca" alt="Imagem de Cupim de Madeira Seca" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Sociais. Colônias dentro da madeira seca. Soldados com cabeça escura e "truncada". Produzem fezes em forma de grânulos.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfa → Soldado/Reprodutor. Ciclo contínuo.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Operários e soldados vivem anos; rainhas vivem décadas.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Reprodutores alados (siriris) voam durante a revoada.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Reprodutores alados são atraídos pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Perfuram madeira, móveis, livros.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Madeira seca (móveis, batentes, forros, esquadrias), objetos de madeira. Dentro de peças de madeira seca, móveis antigos, portas, janelas, assoalhos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Nasutitermes -->
+        <div id="nasutitermes" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Nasutitermes spp. (Cupim Arborícola)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Cupim+Arboricola" alt="Imagem de Cupim Arborícola" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Sociais. Constroem ninhos externos de terra e saliva em árvores ou estruturas. Soldados com cabeça em formato de "nariz" (nasuto).</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfa → Operário/Soldado/Reprodutor. Ciclo contínuo.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Similar a outros cupins sociais.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Reprodutores alados voam durante a revoada.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Reprodutores alados são atraídos pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Podem danificar estruturas e objetos de celulose.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Madeira, celulose. Árvores, postes, paredes externas de edifícios (construindo ninhos), jardins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova Seção: Principais Pragas de Grãos Armazenados -->
+    <section id="graos-armazenados" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-300 pb-2">Pragas de Grãos Armazenados: Protegendo a Produção</h2>
+        <p class="text-lg leading-relaxed mb-4">
+            As pragas de grãos armazenados causam perdas significativas na qualidade e quantidade de produtos agrícolas.
+        </p>
+
+        <!-- Detalhes para Lasioderma (Besouro do Fumo) -->
+        <div id="lasioderma" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Lasioderma serricorne (Besourinho do Fumo)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Besourinho+do+Fumo" alt="Imagem de Besourinho do Fumo" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Pequeno besouro marrom-avermelhado, com corpo oval.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (curva, esbranquiçada) → Pupa → Adulto. O ciclo dura de 30 a 90 dias, dependendo da temperatura e umidade.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem cerca de 2 a 4 semanas.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voam bem, especialmente ao anoitecer ou em ambientes quentes.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Atraído pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Consegue perfurar papel, papelão e plásticos finos.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Produtos de tabaco, grãos processados, especiarias, rações, farinhas, produtos de panificação. Armazéns, despensas, lojas de conveniência, residências.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Oryzaephilus (Besouro Serrilhado dos Grãos) -->
+        <div id="oryzaephilus" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Oryzaephilus surinamensis (Besouro Serrilhado dos Grãos)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Besouro+Serrilhado+dos+Graos" alt="Imagem de Besouro Serrilhado dos Grãos" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Pequeno besouro achatado, marrom-escuro, com seis projeções denteadas no protórax.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (alongada, amarelada) → Pupa → Adulto. Ciclo de 20 a 80 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 6 a 10 meses.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Raramente voa.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Pouca atração pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Entra em frestas e embalagens mal vedadas.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Grãos (arroz, trigo, milho), farinhas, massas, frutas secas, nozes, produtos de panificação. Silos, armazéns, despensas, fábricas de alimentos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Rhyzopertha dominica (Besouro dos Cereais) -->
+        <div id="rhyzopertha-dominica" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Rhyzopertha dominica (Besouro dos Cereais)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Besouro+dos+Cereais" alt="Imagem de Besouro dos Cereais" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Pequeno besouro cilíndrico, marrom-escuro a preto, com cabeça escondida pelo protórax.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (branca, encurvada) → Pupa → Adulto. Ciclo de 25 a 60 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 2 a 4 meses.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa bem.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Atraído pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Consegue perfurar grãos inteiros e embalagens.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Grãos de cereais (trigo, milho, arroz, cevada), farinhas. É um perfurador primário de grãos. Silos, armazéns, paióis, indústrias de moagem.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Cryptolestes (Besouro de Grãos Planos) -->
+        <div id="cryptolestes" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Cryptolestes ferrugineus (Besouro dos Grãos Ferruginoso)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Besouro+dos+Graos+Ferruginoso" alt="Imagem de Besouro dos Grãos Ferruginoso" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Besouro pequeno, achatado, avermelhado-ferruginoso.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (fina, amarelada) → Pupa → Adulto. Ciclo de 20 a 80 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 6 a 9 meses.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa, especialmente em altas temperaturas.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Pouca atração pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Entra em pequenas frestas.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Grãos quebrados, farinhas, farelos, aveia, milho, arroz. Armazéns, moinhos, silos, residências.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Tribolium (Besouro da Farinha) -->
+        <div id="tribolium" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Tribolium castaneum / confusum (Besouro da Farinha)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Besouro+da+Farinha" alt="Imagem de Besouro da Farinha" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> T. castaneum é mais avermelhado e voa; T. confusum é mais escuro, não voa. Ambos são pequenos, alongados e achatados.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (amarelo-dourado, cilíndrica) → Pupa → Adulto. Ciclo de 20 a 90 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 1 a 2 anos.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> T. castaneum voa bem; T. confusum não voa.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Pouca atração pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Entra em pequenas aberturas, frestas e embalagens mal fechadas.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Farinhas, cereais, biscoitos, macarrão, chocolate, especiarias, rações. Moinhos, armazéns, despensas, supermercados.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Sitophilus (Gorgulho) -->
+        <div id="sitophilus" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Sitophilus granarius (Gorgulho do Trigo) / Sitophilus oryzae (Gorgulho do Arroz) / Sitophilus zeamais (Gorgulho do Milho)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Gorgulho" alt="Imagem de Gorgulho" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Pequenos besouros com rostro (tromba) proeminente. Variam na cor (marrom-avermelhado a preto) e tamanho.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo (depositado dentro do grão) → Larva (sem pernas, dentro do grão) → Pupa (dentro do grão) → Adulto. Ciclo de 25 a 60 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 3 a 8 meses.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> S. oryzae e S. zeamais voam bem; S. granarius não voa.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Atraídos pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Furam os grãos para oviposição e embalagens.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Grãos inteiros (trigo, arroz, milho, cevada). São pragas primárias, danificam grãos intactos. Silos, armazéns, despensas, lavouras.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Acanthoscelides (Caruncho do Feijão) -->
+        <div id="acanthoscelides" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Acanthoscelides obtectus (Gorgulho do Feijão)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Gorgulho+do+Feijao" alt="Imagem de Gorgulho do Feijão" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Pequeno besouro ovalado, cinza-acastanhado, com manchas escuras.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (branca, curva, dentro do grão) → Pupa → Adulto. Ciclo de 20 a 60 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 1 a 2 semanas.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa bem.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Atraído pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Penetra grãos inteiros e embalagens.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Grãos de leguminosas (feijão, ervilha, lentilha, grão de bico). Armazéns, despensas, sacarias, lavouras.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Zabrotes (Caruncho do Feijão) -->
+        <div id="zabrotes" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Zabrotes subfasciatus (Caruncho do Feijão)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Caruncho+do+Feijao" alt="Imagem de Caruncho do Feijão" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Pequeno besouro oval, preto-acinzentado, com manchas claras.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (branca, curva, dentro do grão) → Pupa → Adulto. Ciclo de 20 a 40 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 1 a 2 semanas.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa bem.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Atraído pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Penetra grãos e embalagens.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Grãos de feijão, ervilha, lentilha. Armazéns, despensas, sacarias, lavouras.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Tenebrio (Bicho da Farinha) -->
+        <div id="tenebrion" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Tenebrio molitor (Larva da Farinha, Tenébrio Comum)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Larva+da+Farinha" alt="Imagem de Larva da Farinha" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Besouro preto e brilhante, alongado. A larva é amarela-dourada, cilíndrica e dura ("mealworm").</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Pupa → Adulto. Ciclo longo, de 4 a 12 meses.</p>
+            <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 2 a 3 meses.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Pouca atração pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Moderada. Entra em embalagens abertas ou rasgadas.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Farinhas, grãos, farelos, pão, cereais, rações. Moinhos, padarias, armazéns, despensas, locais com acúmulo de alimentos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Trogoderma (Besouro do Armazém) -->
+        <div id="trogoderma" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Trogoderma granarium (Besouro-Khapra)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Besouro-Khapra" alt="Imagem de Besouro-Khapra" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Pequeno besouro ovalado, marrom-avermelhado com manchas irregulares. A larva é coberta por pelos.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Pupa → Adulto. Ciclo de 30 a 90 dias, mas pode ter diapausa de anos em condições desfavoráveis.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de poucos dias a algumas semanas.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Raramente voa.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Pouca atração pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Consegue entrar em pequenas frestas.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Grãos e produtos de grãos, farinhas, sementes oleaginosas, rações. Uma das pragas de grãos mais destrutivas. Armazéns, portos, indústrias de alimentos, áreas de quarentena.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Sitotroga (Traça dos Cereais) -->
+        <div id="sitotroga" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Sitotroga cerealella (Traça dos Grãos)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Traça+dos+Graos" alt="Imagem de Traça dos Grãos" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Pequena mariposa amarelada-palha, com envergadura de asas de 12 a 18 mm. As asas têm franjas longas.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo (na superfície do grão) → Larva (cava túneis no grão) → Pupa (dentro do grão) → Adulto. Ciclo de 30 a 40 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 7 a 10 dias.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa ativamente.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Forte atração pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Consegue entrar em frestas e danificar embalagens.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Grãos inteiros (milho, trigo, arroz, cevada). É uma praga primária. Silos, armazéns, despensas, campos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Plodia (Traça Indiana da Farinha) -->
+        <div id="plodia" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Plodia interpunctella (Traça-Indiana da Farinha)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Traça-Indiana+da+Farinha" alt="Imagem de Traça-Indiana da Farinha" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> Mariposa de 10 a 14 mm de envergadura. As asas anteriores são de cor creme na base e cobre-avermelhadas na metade externa.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (esbranquiçada com cabeça marrom) → Pupa → Adulto. Ciclo de 25 a 50 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 5 a 10 dias.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voa.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Atraída pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. As larvas perfuram embalagens de papel, papelão e plástico.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Farinhas, cereais, nozes, frutas secas, chocolate, biscoitos, rações, sementes. Despensas, armazéns, supermercados, fábricas de alimentos.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detalhes para Ephestia (Traça do Cacau) -->
+        <div id="ephestia" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+            <h4 class="text-xl font-semibold text-gray-800 mb-3">Ephestia kuehniella (Traça-Mediterrânea da Farinha) / Ephestia cautella (Traça-do-Cacau)</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                <div>
+                    <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Traça+do+Cacau" alt="Imagem de Traça do Cacau" class="rounded-lg shadow-md w-full">
+                </div>
+                <div>
+                    <p class="guide-detail"><strong>Biologia:</strong> E. kuehniella: Mariposa cinza-acinzentada, com asas anteriores pálidas e marcas escuras. E. cautella: Mais escura, com asas anteriores marrom-acinzentadas.</p>
+                    <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (esbranquiçada) → Pupa → Adulto. Ciclo de 30 a 90 dias.</p>
+                    <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 7 a 14 dias.</p>
+                    <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voam.</p>
+                    <p class="guide-detail"><strong>Atração por Luz:</strong> Atraídas pela luz.</p>
+                    <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. As larvas perfuram embalagens.</p>
+                    <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Farinhas, cereais, chocolate, cacau, frutas secas, nozes, massas. Formam teias. Moinhos, padarias, fábricas de alimentos, armazéns, despensas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova Seção: Aracnídeos, Pombos e Morcegos -->
+    <section id="outras-pragas" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-300 pb-2">Outras Pragas Urbanas: Diversas</h2>
+
+        <!-- Sub-seção sobre Aracnídeos -->
+        <div id="aracnideos" class="mb-10">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4">Aracnídeos (Aranhas e Escorpiões)</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                Aranhas e escorpiões são aracnídeos que podem causar acidentes com veneno.
+            </p>
+
+            <!-- Detalhes para Tityus bahiensis (Escorpião Marrom) -->
+            <div id="tityus-bahiensis" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Tityus bahiensis (Escorpião Marrom)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Escorpiao+Marrom" alt="Imagem de Escorpião Marrom" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Aracnídeos peçonhentos, com pinças e cauda segmentada terminando em ferrão. T. serrulatus (escorpião amarelo) é o mais perigoso no Brasil.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo (desenvolvimento interno) → Ninfas (várias mudas) → Adulto.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem de 2 a 6 anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voam.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Fuga da luz (fototropismo negativo), preferem locais escuros e úmidos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetram, mas se escondem em frestas.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Se alimentam de insetos (baratas, grilos) e pequenos aracnídeos. Entulhos, madeiras empilhadas, telhas, tijolos, esgotos, ralos, jardins, áreas úmidas e escuras, dentro de sapatos ou roupas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Tityus serrulatus (Escorpião Amarelo) -->
+            <div id="tityus-serrulatus" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Tityus serrulatus (Escorpião Amarelo)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Escorpiao+Amarelo" alt="Imagem de Escorpião Amarelo" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Aracnídeos peçonhentos, com pinças e cauda segmentada terminando em ferrão. T. serrulatus (escorpião amarelo) é o mais perigoso no Brasil.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo (desenvolvimento interno) → Ninfas (várias mudas) → Adulto.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem de 2 a 6 anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voam.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Fuga da luz (fototropismo negativo), preferem locais escuros e úmidos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetram, mas se escondem em frestas.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Se alimentam de insetos (baratas, grilos) e pequenos aracnídeos. Entulhos, madeiras empilhadas, telhas, tijolos, esgotos, ralos, jardins, áreas úmidas e escuras, dentro de sapatos ou roupas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Lycosa (Aranha Lobo) -->
+            <div id="lycosa" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Lycosa spp. (Aranha Lobo)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Aranha+Lobo" alt="Imagem de Aranha Lobo" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Aranha robusta, marrom-acinzentada, com pelos. Caçam ativamente no solo, não fazem teias para captura.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfas → Adulto.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem de 1 a 2 anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Pouca atração pela luz, caçam à noite.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Insetos, outras aranhas. Jardins, gramados, áreas com vegetação, entulhos, troncos de árvores, em ambientes externos, mas podem entrar em residências.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Loxosceles (Aranha Marrom) -->
+            <div id="loxosceles" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Loxosceles spp. (Aranha Marrom)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Aranha+Marrom" alt="Imagem de Aranha Marrom" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Aranha pequena, marrom-clara, com uma mancha em forma de violino no cefalotórax. Teia irregular e algodonosa.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfas → Adulto.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem de 1 a 2 anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Fuga da luz, preferem locais escuros e isolados.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetram, mas se escondem em frestas.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Insetos e outras aranhas. Atrás de móveis, quadros, armários, caixas, telhas, frestas em paredes, pilhas de madeira, locais com pouca movimentação.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Salticidae (Aranha Saltadora) -->
+            <div id="salticidae" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Salticidae (Aranha Saltadora)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Aranha+Saltadora" alt="Imagem de Aranha Saltadora" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Aranhas pequenas, robustas, com olhos grandes e visão apurada. Caçam saltando sobre a presa.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfas → Adulto.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem de 1 a 2 anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraídas pela luz (para caçar insetos).</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Insetos. Paredes, janelas, plantas, jardins, interiores de residências, qualquer superfície onde possam caçar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Tarantulas (Caranguejeiras) -->
+            <div id="tarantulas" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Caranguejeiras (Tarantulas - Diversas spp.)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Caranguejeira" alt="Imagem de Caranguejeira" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Aranhas grandes e peludas. Variam muito em tamanho e cor. Geralmente não são agressivas, mas podem soltar cerdas urticantes.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfas → Adulto.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Fêmeas vivem décadas; machos vivem alguns anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Pouca atração pela luz, noturnas.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Insetos grandes, pequenos roedores, lagartos. Locais arborizados, matas, buracos no solo, troncos de árvores, pilhas de madeira. Raramente em residências, a menos que estejam em áreas rurais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Acarus siro (Ácaro da Farinha) -->
+            <div id="acarus-siro" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Acarus siro (Ácaro da Farinha)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Acaro+da+Farinha" alt="Imagem de Ácaro da Farinha" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Ácaro microscópico, esbranquiçado, com corpo oval.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Ninfa → Adulto. Ciclo de 9 a 11 dias em condições ideais.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 2 a 4 semanas.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Prefere ambientes escuros e úmidos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Passa por pequenas frestas em embalagens.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Farinhas, grãos, queijo, frutas secas, alimentos processados. Despensas, armazéns, padarias, locais com alta umidade e alimentos armazenados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-seção sobre Pombos -->
+        <div id="pombos" class="mb-10 mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4">Pombos Urbanos</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                Pombos urbanos podem ser vetores de doenças e causar danos a edifícios.
+            </p>
+            <!-- Detalhes para Pombos Urbanos (geral) -->
+            <div id="pombos-geral" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Pombos Urbanos (Geral)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Pombo" alt="Imagem de Pombo" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Aves que se adaptaram bem ao ambiente urbano, alimentando-se de restos de comida e grãos.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovos, filhotes e adultos. Reproduzem-se várias vezes ao ano.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> De 3 a 5 anos em ambiente urbano, mas podem viver mais.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Alta capacidade de voo.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Não são diretamente atraídos por luz, mas por fontes de alimento e abrigo.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetram embalagens, mas contaminam superfícies e alimentos expostos.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Telhados, beirais, marquises, forros, torres de edifícios, praças e locais com oferta de alimento e água.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-seção sobre Morcegos -->
+        <div id="morcegos" class="mb-10 mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4">Morcegos</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                Morcegos são animais silvestres protegidos, mas algumas espécies podem abrigar o vírus da raiva.
+            </p>
+            <!-- Detalhes para Morcegos (geral) -->
+            <div id="morcegos-geral" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Morcegos (Geral)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Morcego" alt="Imagem de Morcego" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Mamíferos voadores, com hábitos noturnos. Alimentam-se de insetos, frutas, néctar ou sangue (poucas espécies).</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Nascem vivos, amamentam e se desenvolvem até a fase adulta. Um filhote por gestação, geralmente.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Podem viver mais de 20 anos, dependendo da espécie.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Alta capacidade de voo.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Geralmente evitam a luz, sendo ativos no escuro. Podem ser atraídos por insetos que são atraídos pela luz.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetram embalagens. O risco é a presença e a possibilidade de transmissão de doenças.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Forros, telhados, vãos de edifícios, árvores ocas, cavernas e locais escuros e protegidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nova Sub-seção: Outras Pragas Urbanas Diversas -->
+        <div id="outras-pragas-diversas" class="mb-10 mt-12 pt-8 border-t border-gray-200">
+            <h3 class="text-2xl font-bold text-gray-700 mb-4">Outras Pragas Urbanas Diversas</h3>
+            <p class="text-lg leading-relaxed mb-4">
+                Esta seção aborda outras pragas urbanas que podem ser encontradas em diversos ambientes.
+            </p>
+
+            <!-- Detalhes para Pulex irritans (Pulga Humana) -->
+            <div id="pulex-irritans" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Pulex irritans (Pulga Humana)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Pulga+Humana" alt="Imagem de Pulga Humana" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Pequeno inseto sem asas, achatado lateralmente, com pernas adaptadas para saltar.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva (em frestas e carpetes) → Pupa → Adulto. Ciclo de 20 a 30 dias (pode levar meses).</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 2 meses a 1 ano.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa, mas salta grandes distâncias.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Preferem áreas escuras e sombrias.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Sangue de mamíferos (humanos, cães, gatos, porcos). Larvas se alimentam de resíduos orgânicos. Em hospedeiros, em frestas de pisos, carpetes, camas, sofás, ninhos de animais.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Cimex (Percevejo de Cama) -->
+            <div id="cimex" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Cimex lectularius (Percevejo de Cama)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Percevejo+de+Cama" alt="Imagem de Percevejo de Cama" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Inseto achatado, oval, marrom-avermelhado, sem asas. Noturno.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfa → Adulto. Ciclo de 6 a 12 semanas.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 6 a 12 meses (podem sobreviver mais de 1 ano sem alimento).</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Fuga da luz (fototropismo negativo).</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetra, mas se esconde em frestas.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Sangue de humanos (preferencialmente) e outros mamíferos/aves. Colchões, estrados de cama, frestas em paredes, móveis, tomadas, atrás de quadros, bagagens, estofados.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Traças (Geral) -->
+            <div id="tracas" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Traças (Tineola bisselliella - Roupa / Tinea pellionella - Fato / Lepisma saccharina - Livro)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Traca" alt="Imagem de Traça" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Pequenas mariposas (roupa e fato) ou insetos prateados (livro). Traça da Roupa: Mariposa amarelada-dourada, larva constrói casulo de seda. Traça do Fato: Mariposa marrom-acinzentada, larva constrói casulo tubular. Traça do Livro (Silverfish): Corpo achatado, prateado, sem asas, com três filamentos na parte posterior.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Mariposas: Ovo → Larva → Pupa → Adulto. Ciclo de 2 a 4 meses. Traça do Livro: Ovo → Ninfa → Adulto. Ciclo de 3 a 4 meses (pode levar anos).</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Mariposas: Adultos vivem poucas semanas. Traça do Livro: Vivem de 2 a 8 anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Mariposas voam; traça do livro não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Mariposas da roupa/fato preferem escuridão; traça do livro foge da luz.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Alta. Entram em armários, gavetas e embalagens.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Mariposas: Fibras naturais (lã, seda, penas, pelos), roupas, tapetes, couros. Traça do Livro: Celulose (papel, livros, documentos), cola, amido, tecidos de algodão, restos de insetos. Mariposas: Armários, gavetas, guarda-roupas, sótãos, locais escuros e com pouca movimentação. Traça do Livro: Bibliotecas, arquivos, banheiros, porões, frestas em paredes, locais úmidos e escuros.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Vespas (Geral) -->
+            <div id="vespas" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Vespas (Diversas spp., como Polistes spp. - Vespas-do-Papel)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Vespa" alt="Imagem de Vespa" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Insetos sociais ou solitários, com cintura fina, geralmente com listras amarelas e pretas. Possuem ferrão.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Larva → Pupa → Adulto. Ciclo de algumas semanas.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Operárias vivem semanas; rainhas vivem um ano.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, voam bem.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraídas pela luz (algumas espécies).</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Ninhos feitos de celulose mastigada ou lama. Alimentam-se de néctar, frutas e insetos (predadores). Ninhos em telhados, beirais, árvores, arbustos, frestas em paredes, forros, jardins.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Aphis (Pulgões) -->
+            <div id="aphis" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Aphis spp. (Pulgões)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Pulgoes" alt="Imagem de Pulgões" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Pequenos insetos de corpo mole, em forma de pera, verdes, pretos ou amarelos. Podem ter ou não asas.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Reprodução sexuada e assexuada. Ovo → Ninfa → Adulto. Ciclo rápido, de 1 a 2 semanas.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Adultos vivem de 2 a 4 semanas.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Algumas formas aladas voam.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraídos pela luz, mas principalmente pelo hospedeiro vegetal.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetram, mas danificam plantas.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Se alimentam da seiva de plantas. Hortas, jardins, plantas ornamentais, culturas agrícolas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Tesourinha -->
+            <div id="tesourinha" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Tesourinha (Dermaptera spp.)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Tesourinha" alt="Imagem de Tesourinha" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Inseto alongado, marrom, com um par de pinças na parte posterior do abdômen.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfa → Adulto. Ciclo de algumas semanas a meses.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem até 1 ano.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Sim, algumas espécies voam, mas raramente.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Atraídas pela luz.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não penetram embalagens, mas se escondem.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Matéria orgânica em decomposição, plantas, pequenos insetos. Podem danificar plantas. Jardins, sob pedras, folhas, madeira em decomposição, em frestas, locais úmidos. Podem entrar em residências.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Piolho de Cobra -->
+            <div id="piolho-de-cobra" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Piolho de Cobra (Diplopoda spp. - Milípedes)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Piolho+de+Cobra" alt="Imagem de Piolho de Cobra" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Miriápode com corpo cilíclico e muitos segmentos, cada um com dois pares de pernas. Se enrolam quando ameaçados.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfas → Adulto.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem vários anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Preferem locais escuros e úmidos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Matéria orgânica em decomposição (folhas, madeira). Jardins, sob pedras, vasos de plantas, folhas, locais úmidos e com matéria orgânica. Podem entrar em casas em busca de umidade.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detalhes para Lacraias -->
+            <div id="lacraias" class="mb-8 p-6 bg-gray-50 rounded-lg shadow-sm border border-gray-200">
+                <h4 class="text-xl font-semibold text-gray-800 mb-3">Lacraias (Chilopoda spp. - Centopeias)</h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
+                    <div>
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Lacraia" alt="Imagem de Lacraia" class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div>
+                        <p class="guide-detail"><strong>Biologia:</strong> Miriápode achatado dorsoventralmente, com um par de pernas por segmento. Carnívoras e possuem forcípulas venenosas.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfas → Adulto.</p>
+                        <p class="guide-detail"><strong>Longevidade:</strong> Vivem vários anos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
+                        <p class="guide-detail"><strong>Atração por Luz:</strong> Preferem locais escuros e úmidos.</p>
+                        <p class="guide-detail"><strong>Capacidade de Penetração em Embalagens:</strong> Não.</p>
+                        <p class="guide-detail"><strong>Substratos e Onde Podem Ser Encontrados:</strong> Insetos, aranhas e outros pequenos invertebrados. Sob pedras, troncos, folhas, entulhos, em locais úmidos e escuros. Podem entrar em casas através de ralos e frestas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Prevenção Geral (mantida) -->
+    <section id="prevencao" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-300 pb-2">Estratégias de Prevenção</h2>
+        <p class="text-lg leading-relaxed mb-4">
+            A prevenção é a chave para o manejo eficaz de pragas urbanas. Adotar boas práticas de higiene e manutenção pode reduzir significativamente a chance de infestações.
+        </p>
+        <ul class="list-disc list-inside text-lg leading-relaxed space-y-3">
+            <li>Mantenha a limpeza e organização do ambiente.</li>
+            <li>Armazene alimentos em recipientes herméticos.</li>
+            <li>Descarte o lixo em sacos bem fechados e lixeiras com tampa.</li>
+            <li>Vede frestas, buracos e rachaduras em paredes, pisos e telhados.</li>
+            <li>Instale telas em janelas e portas.</li>
+            <li>Evite o acúmulo de entulhos e materiais sem uso.</li>
+            <li>Inspecione regularmente áreas de risco (cozinhas, banheiros, despensas).</li>
+        </ul>
+    </section>
+
+    <!-- Seção de Métodos de Controle (mantida) -->
+    <section id="controle" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-300 pb-2">Métodos de Controle e Manejo Integrado</h2>
+        <p class="text-lg leading-relaxed mb-4">
+            Quando a prevenção não é suficiente, é necessário aplicar métodos de controle. O Manejo Integrado de Pragas (MIP) combina diferentes estratégias para obter o melhor resultado com o menor impacto ambiental e à saúde.
+        </p>
+        <ul class="list-disc list-inside text-lg leading-relaxed space-y-3">
+            <li>
+                <strong>Controle Químico:</strong> Uso de inseticidas ou raticidas específicos, aplicados por profissionais qualificados e seguindo as normas de segurança.
+            </li>
+            <li>
+                <strong>Controle Físico:</strong> Utilização de armadilhas, barreiras físicas (telas, vedação) e equipamentos que alteram o ambiente para torná-lo inóspito às pragas.
+            </li>
+            <li>
+                <strong>Controle Biológico:</strong> Em alguns contextos, o uso de inimigos naturais das pragas pode ser uma opção, embora menos comum em ambientes urbanos para controle direto.
+            </li>
+            <li>
+                <strong>Educação e Conscientização:</strong> Informar a população sobre as medidas preventivas e a importância da colaboração é fundamental para o sucesso do controle.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Rodapé da Aplicação (mantido) -->
+    <footer class="bg-gray-800 text-white p-6 text-center shadow-inner">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2025 Folheto Digital de Pragas Urbanas. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Desenvolvido com o objetivo de disseminar informações para técnicos de controle de pragas.</p>
+        </div>
+    </footer>
+
+    <!-- Botão "Voltar ao Topo" (mantido) -->
+    <button id="backToTopBtn" title="Voltar ao Topo">↑</button>
+
+    <script>
+        // Lógica para o botão "Voltar ao Topo"
+        const backToTopBtn = document.getElementById("backToTopBtn");
+
+        // Mostra o botão quando o usuário rola para baixo 20px da parte superior do documento
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        // Quando o usuário clica no botão, rola para o topo do documento
+        backToTopBtn.addEventListener('click', function() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        });
+    </script>
+</body>
+</html>

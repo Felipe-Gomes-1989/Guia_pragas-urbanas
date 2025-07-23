@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GUIA DIGITAL PARA IDENTIFICAÇÃO DE PRAGAS URBANAS</title>
+    <title>Folheto Digital: Pragas Urbanas</title>
     <!-- Carrega o Tailwind CSS para estilização fácil e responsiva -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -55,7 +55,7 @@
     <!-- Cabeçalho da Aplicação -->
     <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6 shadow-lg">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <h1 class="text-4xl font-extrabold mb-4 md:mb-0">Guia digital: Pragas Urbanas</h1>
+            <h1 class="text-4xl font-extrabold mb-4 md:mb-0">Folheto Digital: Pragas Urbanas</h1>
             <nav>
                 <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6 text-lg">
                     <li><a href="#introducao" class="hover:text-blue-200 transition duration-300">Introdução</a></li>
@@ -70,11 +70,19 @@
         </div>
     </header>
 
+    <!-- Seção de Pesquisa -->
+    <section class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md flex flex-col md:flex-row items-center justify-center gap-4">
+        <input type="text" id="searchInput" placeholder="Pesquisar praga..." class="p-3 border border-gray-300 rounded-lg w-full md:w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button id="searchButton" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg w-full md:w-auto">
+            Pesquisar
+        </button>
+    </section>
+
     <!-- Seção de Introdução -->
     <section id="introducao" class="container mx-auto p-8 my-8 bg-white rounded-lg shadow-md">
         <h2 class="text-3xl font-bold text-blue-700 mb-6 border-b-2 border-blue-300 pb-2">Bem-vindo ao Folheto Digital de Pragas Urbanas</h2>
         <p class="text-lg leading-relaxed mb-4">
-            Este Guia foi desenvolvido para auxiliar técnicos no reconhecimento, prevenção e controle das principais pragas urbanas. A informação aqui contida visa ser um guia prático para o dia a dia, promovendo ambientes mais seguros e saudáveis.
+            Este folheto foi desenvolvido para auxiliar técnicos no reconhecimento, prevenção e controle das principais pragas urbanas. A informação aqui contida visa ser um guia prático para o dia a dia, promovendo ambientes mais seguros e saudáveis.
         </p>
         <p class="text-lg leading-relaxed">
             Compreender o comportamento e os hábitos das pragas é o primeiro passo para um controle eficaz e sustentável. Explore as seções abaixo para aprofundar seus conhecimentos.
@@ -97,7 +105,7 @@
                 <h4 class="text-xl font-semibold text-gray-800 mb-3">Rattus norvegicus (Ratazana)</h4>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
                     <div>
-                        <img src="Fotos/5066741495_e225a75c34_o.jpg" alt="Imagem de Ratazana" class="rounded-lg shadow-md w-full">
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Ratazana" alt="Imagem de Ratazana" class="rounded-lg shadow-md w-full">
                     </div>
                     <div>
                         <p class="guide-detail"><strong>Biologia:</strong> Roedor grande, cauda grossa e menor que o corpo, orelhas pequenas, focinho grosso.</p>
@@ -116,7 +124,7 @@
                 <h4 class="text-xl font-semibold text-gray-800 mb-3">Mus musculus (Camundongo)</h4>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
                     <div>
-                        <img src="Fotos/musmusculus.jpg" alt="Imagem de Camundongo" class="rounded-lg shadow-md w-full">
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Camundongo" alt="Imagem de Camundongo" class="rounded-lg shadow-md w-full">
                     </div>
                     <div>
                         <p class="guide-detail"><strong>Biologia:</strong> Roedor pequeno, cauda longa e fina (maior que o corpo), orelhas grandes, focinho pontudo.</p>
@@ -135,7 +143,7 @@
                 <h4 class="text-xl font-semibold text-gray-800 mb-3">Rattus rattus (Rato de Telhado)</h4>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-4">
                     <div>
-                        <img src="Fotos/3117206601_aa6b7905bb_c.jpg" alt="Imagem de Rato de Telhado" class="rounded-lg shadow-md w-full">
+                        <img src="https://placehold.co/600x400/F0F9FF/1E40AF?text=Rato+de+Telhado" alt="Imagem de Rato de Telhado" class="rounded-lg shadow-md w-full">
                     </div>
                     <div>
                         <p class="guide-detail"><strong>Biologia:</strong> Roedor médio, cauda longa (maior que o corpo), orelhas grandes, focinho afilado. Ágil e bom escalador.</p>
@@ -827,7 +835,7 @@
                     </div>
                     <div>
                         <p class="guide-detail"><strong>Biologia:</strong> Aranha pequena, marrom-clara, com uma mancha em forma de violino no cefalotórax. Teia irregular e algodonosa.</p>
-                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfas → Adulto.</p>
+                        <p class="guide-detail"><strong>Ciclo de Vida:</strong> Ovo → Ninfas → Adulto.p>
                         <p class="guide-detail"><strong>Longevidade:</strong> Vivem de 1 a 2 anos.</p>
                         <p class="guide-detail"><strong>Capacidade de Voo:</strong> Não voa.</p>
                         <p class="guide-detail"><strong>Atração por Luz:</strong> Fuga da luz, preferem locais escuros e isolados.</p>
@@ -1150,7 +1158,7 @@
     <!-- Rodapé da Aplicação (mantido) -->
     <footer class="bg-gray-800 text-white p-6 text-center shadow-inner">
         <div class="container mx-auto">
-            <p class="text-sm">&copy; 2025 Guia Digital de Identificação de Pragas Urbanas. Todos os direitos reservados.</p>
+            <p class="text-sm">&copy; 2025 Folheto Digital de Pragas Urbanas. Todos os direitos reservados.</p>
             <p class="text-sm mt-2">Desenvolvido com o objetivo de disseminar informações para técnicos de controle de pragas.</p>
         </div>
     </footer>
@@ -1176,6 +1184,40 @@
             document.body.scrollTop = 0; // Para Safari
             document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
         });
+
+        // Lógica para a função de pesquisa
+        document.getElementById('searchButton').addEventListener('click', performSearch);
+        document.getElementById('searchInput').addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        function performSearch() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            // Seleciona todas as divs que representam uma praga específica
+            const pestSections = document.querySelectorAll(
+                '#roedores > div, #baratas > div, #formigas > div, #moscas > div, #mosquitos > div, ' +
+                '#coptotermes, #cryptotermes, #nasutitermes, ' +
+                '#lasioderma, #oryzaephilus, #rhyzopertha-dominica, #cryptolestes, #tribolium, #sitophilus, #acanthoscelides, #zabrotes, #tenebrion, #trogoderma, #sitotroga, #plodia, #ephestia, ' +
+                '#tityus-bahiensis, #tityus-serrulatus, #lycosa, #loxosceles, #salticidae, #tarantulas, #acarus-siro, ' +
+                '#pombos-geral, #morcegos-geral, ' +
+                '#pulex-irritans, #cimex, #tracas, #vespas, #aphis, #tesourinha, #piolho-de-cobra, #lacraias'
+            );
+
+            pestSections.forEach(section => {
+                const sectionText = section.textContent.toLowerCase();
+                if (searchTerm === '' || sectionText.includes(searchTerm)) {
+                    section.style.display = 'block'; // Mostra a seção
+                } else {
+                    section.style.display = 'none'; // Esconde a seção
+                }
+            });
+
+            // Opcional: Rola para o topo após a pesquisa para ver os resultados
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 </html>
